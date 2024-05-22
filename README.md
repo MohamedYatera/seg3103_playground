@@ -1,6 +1,6 @@
 # seg3103_playground
 
-I used WSL to be able to run the bash scripts
+I used WSL to run the bash scripts
 
 Open wsl using CMD or  Powershell
 
