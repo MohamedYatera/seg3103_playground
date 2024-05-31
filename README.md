@@ -1,5 +1,5 @@
 # seg3103_playground
-
+_____________________________________________
 **Lab 1**
 I used WSL to run the bash scripts
 
@@ -13,6 +13,7 @@ Mohamed Yatera
 300280976
 myate081@uottawa.ca
 
+_____________________________________________
 **Lab 2**
 
 I used WSL to run the test through ./bin/test
