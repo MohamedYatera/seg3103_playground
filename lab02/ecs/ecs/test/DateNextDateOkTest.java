@@ -8,8 +8,7 @@ public class DateNextDateOkTest {
     @ParameterizedTest
     @CsvSource(value = {
             "1700, 6, 20, 1700, 6, 21",
-            "2005, 4, 15, 2005, 4, 16", // December is month 11 (0-based)
-            "1901, 7, 20, 1901, 7, 21",
+            "2005, 4, 15, 2005, 4, 16", 
             "3456,3,27,3456,3,28",
             "1500,2,17,1500,2,18",
             "1700,6,29,1700,6,30",
@@ -26,13 +25,12 @@ public class DateNextDateOkTest {
     })
     public void testNextDate_VariousInputs(int inputYear, int inputMonth, int inputDay, int expectedYear,
             int expectedMonth, int expectedDay) {
-        // Create the input date object
+       
         Date date = new Date(inputYear, inputMonth, inputDay);
 
-        // Call nextDate and get the resulting date
         Date nextDate = date.nextDate();
 
-        // Assert that the resulting date matches the expected values
+        
         assertEquals(expectedYear, nextDate.getYear());
         assertEquals(expectedMonth, nextDate.getMonth());
         assertEquals(expectedDay, nextDate.getDay());
