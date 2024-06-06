@@ -46,3 +46,7 @@ I then wrote the test cases one by one in the DateTest.java to maximize coverage
 After that i did some refactoring of Data.java to handle the edge cases and areas that i was  able to enter (if statements)
 
 Lastly, i went back to my test cases for some additonal test code and some refactoring to achieve 100% coverage
+
+Mohamed Yatera
+300280976
+myate081@uottawa.ca
