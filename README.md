@@ -38,7 +38,11 @@ _____________________________________________
 I used WSL to run the test through ./bin/jacoco
 
 Before starting i went through the Date.java code and DateTest.java code. Since it was used for lab02 i was already familiar with them
+
 After this i ran jacoco to see what branches/statements were missing coverage
+
 I then wrote the test cases one by one in the DateTest.java to maximize coverage.
+
 After that i did some refactoring of Data.java to handle the edge cases and areas that i was  able to enter (if statements)
+
 Lastly, i went back to my test cases for some additonal test code and some refactoring to achieve 100% coverage
