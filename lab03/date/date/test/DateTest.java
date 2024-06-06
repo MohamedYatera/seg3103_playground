@@ -3,6 +3,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 class DateTest {
+  
   @Test
   void nextDate_a() {
     Date today = new Date(1700, 6, 40);
@@ -16,6 +17,100 @@ class DateTest {
     Date expectedTomorrow = new Date(2000, -1, 2);
     assertEquals(expectedTomorrow, today.nextDate());
   }
+
+  @Test
+  void nextDate_endOfFebLeapYear() {
+    Date today = new Date(2020, 2, 29);
+    Date expectedTomorrow = new Date(2020, 3, 1);
+    assertEquals(expectedTomorrow, today.nextDate());
+  }
+
+  @Test
+  void nextDate_endOfFebNonLeapYear() {
+    Date today = new Date(2019, 2, 28);
+    Date expectedTomorrow = new Date(2019, 3, 1);
+    assertEquals(expectedTomorrow, today.nextDate());
+  }
+
+  @Test
+  void nextDate_endOfMonthApril() {
+    Date today = new Date(2021, 4, 30);
+    Date expectedTomorrow = new Date(2021, 5, 1);
+    assertEquals(expectedTomorrow, today.nextDate());
+  }
+
+  @Test
+  void nextDate_endOfMonthJune() {
+    Date today = new Date(2021, 6, 30);
+    Date expectedTomorrow = new Date(2021, 7, 1);
+    assertEquals(expectedTomorrow, today.nextDate());
+  }
+
+  @Test
+  void nextDate_endOfMonthSept() {
+    Date today = new Date(2021, 9, 30);
+    Date expectedTomorrow = new Date(2021, 10, 1);
+    assertEquals(expectedTomorrow, today.nextDate());
+  }
+
+  @Test
+  void nextDate_endOfMonthNov() {
+    Date today = new Date(2021, 11, 30);
+    Date expectedTomorrow = new Date(2021, 12, 1);
+    assertEquals(expectedTomorrow, today.nextDate());
+  }
+
+  @Test
+  void nextDate_regularDay() {
+    Date today = new Date(2021, 7, 15);
+    Date expectedTomorrow = new Date(2021, 7, 16);
+    assertEquals(expectedTomorrow, today.nextDate());
+  }
+
+  @Test
+  void nextDate_endOfYear() {
+    Date today = new Date(2021, 12, 31);
+    Date expectedTomorrow = new Date(2022, 1, 1);
+    assertEquals(expectedTomorrow, today.nextDate());
+  }
+
+  @Test
+  void date_invalidDay_lessThan1() {
+    assertThrows(
+        IllegalArgumentException.class,
+        () -> new Date(2021, 1, 0));
+  }
+
+  @Test
+  void date_invalidDay_moreThan31() {
+    assertThrows(
+        IllegalArgumentException.class,
+        () -> new Date(2021, 1, 32));
+  }
+
+  @Test
+  void date_invalidDay_30DayMonth() {
+    assertThrows(
+        IllegalArgumentException.class,
+        () -> new Date(2021, 4, 31));
+  }
+
+  @Test
+  void date_invalidDay_febNonLeapYear() {
+    assertThrows(
+        IllegalArgumentException.class,
+        () -> new Date(2021, 2, 29));
+  }
+
+  @Test
+  void date_invalidDay_febLeapYear() {
+    assertThrows(
+        IllegalArgumentException.class,
+        () -> new Date(2020, 2, 30));
+  }
+  
+
+  // _______________________________________________________________
 
  
 
