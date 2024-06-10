@@ -59,7 +59,7 @@ I was unable to do the TDD in the exact same project folder that contains the ot
 This is the link of the repo containing all the commits:
 https://github.com/MohamedYatera/TDD
 
-Please contact if linkg is not working
+Please contact if link is not working
 
 One of the files contains the code while the other contains the test cases. I followed the TDD approach:
 Red: Test Case that fails becaues of lack of code implementation
