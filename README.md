@@ -50,3 +50,22 @@ Lastly, i went back to my test cases for some additonal test code and some refac
 Mohamed Yatera
 300280976
 myate081@uottawa.ca
+
+
+**Lab 4**
+
+I was unable to do the TDD in the exact same project folder that contains the other labs, so i made another repo and did the TDD over there. 
+
+This is the link of the repo containing all the commits:
+https://github.com/MohamedYatera/TDD
+
+Please contact if linkg is not working
+
+One of the files contains the code while the other contains the test cases. I followed the TDD approach:
+Red: Test Case that fails becaues of lack of code implementation
+Green: Test cases passes because of bare minimum code implementation
+Refactor: Change code/test to make them more efficient/cleaner
+
+Mohamed Yatera
+300280976
+myate081@uottawa.ca
