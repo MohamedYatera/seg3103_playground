@@ -20,7 +20,7 @@ defmodule Grades.Calculator do
     0.2 * avg_labs + 0.3 * avg_homework + 0.2 * midterm + 0.3 * final
   end
 
-  def percentage_grade(%{homework: homework, labs: labs, midterm: midterm, final: final}) do
+ def percentage_grade(%{homework: homework, labs: labs, midterm: midterm, final: final}) do
     avg_homework = avg(homework)
     avg_labs = avg(labs)
 
