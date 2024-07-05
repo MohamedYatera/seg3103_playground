@@ -59,7 +59,7 @@ defmodule Grades.Calculator do
       0
     else
       mark = 0.2 * avg_labs + 0.3 * avg_homework + 0.2 * midterm + 0.3 * final
-
+      #Accidently put commit Question 2.2 as 2.3, so this is 2.2
       cond do
         mark > 0.895 -> 10
         mark > 0.845 -> 9
